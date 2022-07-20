@@ -425,7 +425,163 @@ h1, h2, h3, h4, h5 {
 	}
 
 }
-
+.section--do{
+	padding: 112px 0 0 0;
+}
 .do{
 	padding: 92px 0 120px 0;
+	display: flex;
+	&__item{
+		width: 50%;
+	}
+}
+.accordion{
+	&__item{
+		border: 1px solid #e5e5e5;
+		&.active .accordion__content {
+			display: block;
+		}
+		&.active .accordion__header{
+			border-bottom: 1px solid #e5e5e5; 
+
+			&:after{
+				transform: translateY(-50%) rotate(-45deg);
+			margin-top: 5px;
+			}
+			
+
+		}
+	}
+	&__header{
+		padding: 15px 20px 15px 60px;
+		border-bottom: 1px solid transparent; 
+		position: relative;
+		&::after{
+			content: "";
+			display: block;
+			width: 22px;
+			height: 22px;
+
+			border-top: 2px solid #cccc;
+			border-right: 2px solid #cccc;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			z-index: 1;
+			transform: translateY(-50%) rotate(135deg);
+			cursor: pointer;
+		}
+		
+	}
+	&__icon{
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		z-index: 1;
+		transform: translateY(-50%);
+	}
+	&__content{
+		display: none;
+		padding: 20px;
+		color: #999999;
+		font-style: italic;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: normal;
+		line-height: 24px;
+		text-align: left;
+	}
+	&__title{
+		color: #333333;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
+		text-transform: uppercase;
+	}
+}
+
+
+.reviews{
+	background-color: #f8f8f8;
+	&__grey{
+		padding: 70px 110px 70px 110px;
+		position: relative;
+	}
+	&__item{
+		padding-left: 205px;
+		position: relative;
+	}
+	&__photo{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		border: 3px solid #95e1d3;
+		padding: 45px;
+	}
+	&__text{
+		color: #999999;
+		font-family: "Montserrat";
+		font-size: 24px;
+		font-weight: 300;
+		font-style: italic;
+		letter-spacing: normal;
+		line-height: 36px;
+		text-align: left;
+		margin-bottom: 23px;
+	}
+	&__author{
+		color: #333333;
+		font-family: "Kaushan Script";
+		font-size: 24px;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
+		&::before{
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			width: 60px;
+			height: 3px;
+			background-color: #f38181;
+		}
+	}
+	&__btn{
+		font-size: 0;
+		color: transparent ;
+		
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+		transform: translateY(-50%);
+		&-prew{
+			left: 0;
+			transform:  rotate(-45deg);
+		}
+		&-next{
+			right: 0;
+			transform:  rotate(135deg);
+		}
+		
+		&::after{
+			content: "";
+			display: block;
+			width: 22px;
+			height: 22px;
+
+			border-top: 2px solid #cccc;
+			border-left: 2px solid #cccc;
+			
+			cursor: pointer;
+		}
+		
+	}
+
+	
 }
