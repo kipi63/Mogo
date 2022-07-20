@@ -261,62 +261,7 @@ h1, h2, h3, h4, h5 {
 	}
 	
 }
-.pictures{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	margin-top: 100px;
-	
 
-	&__item{
-		background-color:  #95e1d3;
-		position: relative;
-		&:hover .pictures__img img{
-			opacity: .1;
-		}
-		&:hover .pictures__img{
-			transform: translate3d(-10px, -10px, 0)
-
-		}
-		&:hover .pictures__decr {
-			opacity: 1;
-		}
-		
-		
-	}
-	&__img{
-		background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-		transition: transform .2s linear;
-		
-		& img{
-			transition: opacity .1s linear;
-			display: block;
-		}
-		
-		
-	}
-	&__decr{
-		width: 100%;
-		color: #ffffff;
-		font-family: Montserrat;
-		font-size: 18px;
-		font-weight: 700;
-		font-style: normal;
-		letter-spacing: normal;
-		line-height: normal;
-		text-align: center;
-		text-transform: uppercase;
-		position: absolute;
-		top: 50%;
-		left: 0;
-		z-index: 2;
-		transform: translate3d(0, -50%, 0);
-		opacity: 0;
-		transition: opacity .2s linear;
-	
-	}
-}
 .statistics{
 	padding: 90px 0;
 	background-color: #95e1d3;
@@ -585,4 +530,61 @@ h1, h2, h3, h4, h5 {
 	}
 
 	
+}
+
+.card{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-top: 100px;
+	
+
+	&__item{
+		background-color:  #95e1d3;
+		position: relative;
+		&:hover .card__img img{
+			opacity: .1;
+		}
+		&:hover .card__img{
+			transform: translate3d(-10px, -10px, 0)
+
+		}
+		&:hover .card__decr {
+			opacity: 1;
+		}
+		
+		
+	}
+	&__img{
+		background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+		transition: transform .2s linear;
+		
+		& img{
+			transition: opacity .1s linear;
+			display: block;
+		}
+		
+		
+	}
+	&__decr{
+		width: 100%;
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 18px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: 2;
+		transform: translate3d(0, -50%, 0);
+		opacity: 0;
+		transition: opacity .2s linear;
+	
+	}
 }
