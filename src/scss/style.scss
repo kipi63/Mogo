@@ -776,3 +776,83 @@ h1, h2, h3, h4, h5 {
 		}
 	}
 }
+.stories{
+	display: flex;
+	&__item{
+		width: 30%;
+		padding: 0 30px 100px 0;
+		
+
+	}
+	&__header{
+		position: relative;
+		margin-bottom: 20px;
+	}
+	&__photo{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&__date{
+		position: absolute;
+		bottom: 10px;
+		left: -10px;
+		width: 60px;
+		height: 70px;
+		background-color: #95e1d3;
+		color: #ffffff;
+		text-align: center;
+
+	}
+	&__day{
+		font-family: Montserrat;
+		font-size: 30px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+	&__month{
+		font-size: 15px;
+		font-weight: 400;
+		font-style: italic;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+	}
+	&__content{
+		
+		
+	}
+	&__title{
+		margin-bottom: 20px;
+		& a{
+			color: #333333;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-weight: 550;
+			font-style: normal;
+			letter-spacing: normal;
+			line-height: normal;
+			text-align: left;
+			text-transform: uppercase;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+				color: #ecb086;
+			}
+		}
+	}
+	&__text{
+		color: #999999;
+		font-family: Roboto;
+		font-size: 15px;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 24px;
+		text-align: left;
+	}
+
+}
