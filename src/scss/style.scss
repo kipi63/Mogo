@@ -245,6 +245,9 @@ h1, h2, h3, h4, h5 {
 }
 .section {
 	padding: 90px 0 110px 0;
+	&-clients{
+		background: url('../img/bg/happy.png') center (center / cover) no-repeat;
+	}
 	&__header{
 		width: 100%;
 		margin:0 auto 40px;
@@ -717,4 +720,59 @@ h1, h2, h3, h4, h5 {
 		text-align: center;
 	}
 
+}
+.clients{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item{
+		width: 30%;
+		padding: 100px 45px 0 175px;
+		position: relative;
+		margin-bottom: 60px;
+	}
+	&__img{
+		border-radius: 50%;
+		position: absolute;
+		top: 30%;
+		left: 40px;
+		z-index: 1;
+	}
+	&__name{
+		color: #333333;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 600;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	&__prof{
+		font-size: 15px;
+		font-weight: 400;
+		font-style: italic;
+		letter-spacing: normal;
+		line-height: 24px;
+		text-align: left;
+		margin-top: 15px;
+		&::after{
+			content: "";
+			display: block;
+			width: 60px;
+			height: 3px;
+			background-color: #f38181;
+			margin: 17px 0 24px 0;
+		}
+		&__text{
+			color: #999999;
+			font-size: 14px;
+			font-weight: 400;
+			font-style: normal;
+			letter-spacing: normal;
+			text-align: left;
+
+		}
+	}
 }
