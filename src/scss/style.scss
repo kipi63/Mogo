@@ -245,8 +245,12 @@ h1, h2, h3, h4, h5 {
 }
 .section {
 	padding: 90px 0 110px 0;
+
 	&-clients{
 		background: url('../img/bg/happy.png') center (center / cover) no-repeat;
+	}
+	&-map{
+		background: url('../img/bg/map.png') center (center / cover) no-repeat;
 	}
 	&__header{
 		width: 100%;
@@ -778,8 +782,9 @@ h1, h2, h3, h4, h5 {
 }
 .stories{
 	display: flex;
+	justify-content: space-between;
 	&__item{
-		width: 30%;
+		width: 31%;
 		padding: 0 30px 100px 0;
 		
 
@@ -822,7 +827,7 @@ h1, h2, h3, h4, h5 {
 		text-align: center;
 	}
 	&__content{
-		
+		margin-bottom: 20px;
 		
 	}
 	&__title{
@@ -854,5 +859,61 @@ h1, h2, h3, h4, h5 {
 		line-height: 24px;
 		text-align: left;
 	}
+	&__footer{
+		border-top: 1px solid #e5e5e5;
+		padding-top: 20px;
+		& span{
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	&__count{
+		color: #999999;
+		font-size: 15px;
+		font-weight: 400;
+		font-style: italic;
+		letter-spacing: normal;
+		line-height: 24px;
+		text-align: left;
+		margin-right: 20px;
+	}
+	&__icon{
+		color: #95e1d3;
+	}
 
+}
+.map{
+	&__pin {
+		text-decoration: none;
+		color: #f38181;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:hover{
+			text-decoration: underline;
+		}
+		&:after{
+
+			content: "";
+			display: block;
+			width: 60px;
+			height: 3px;
+			background-color: #f38181;
+			
+		}
+		
+	}
+
+	&__text{
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 20px auto;
+	}
 }
