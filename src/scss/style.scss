@@ -1,4 +1,5 @@
 body {
+	margin: 0;
 	font-family: 'Kaushan Script', cursive;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
@@ -26,8 +27,10 @@ h1, h2, h3, h4, h5 {
 }
 .container {
 	width: 100%;
-	max-width: 1200px;
+	
+	max-width: 1230px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 .suptittle{
 	color: #333333;
@@ -177,6 +180,7 @@ h1, h2, h3, h4, h5 {
 	z-index: 1000;
 	&__logo{
 		/* Style for "MoGo" */
+	width: 45%;
 	color: #ffffff;
 	font-family: Montserrat;
 	font-size: 30px;
@@ -188,6 +192,7 @@ h1, h2, h3, h4, h5 {
 	text-transform: uppercase;
 	}
 	&__inner{
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -195,6 +200,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav {
+	width: 55%;
 	color: #ffffff;
 	font-family: Montserrat;
 	font-size: 14px;
@@ -205,16 +211,17 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 	text-transform: uppercase;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	flex-direction: row;
 	&__link{
 		display: inline-block;
 		vertical-align: top;
-		margin: 0 10px;
 		color: #ffffff;
 		text-decoration: none;
 		transition: color 0.2s linear;
 		position: relative;
+		
+		
 		&.active{
 			color: #fce38a;
 			&::after{
@@ -1063,7 +1070,7 @@ h1, h2, h3, h4, h5 {
 		justify-content: start;
 		margin-bottom: 20px;
 		& img{
-			margin:2px ;
+			margin: 1px ;
 		}
 		
 
@@ -1125,4 +1132,101 @@ h1, h2, h3, h4, h5 {
 
 	
 
+}
+.copyright{
+	padding: 22px 0;
+	color: #333333;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+	text-align: center;
+	& span{
+		color: #f38181;
+	}
+}
+
+
+
+@media(max-width : 1230px) {
+	
+	.intro{
+		&__tittle{
+			font-size: 120px;
+		}
+		&__suptittle{
+			font-size: 50px;
+		}
+	
+	}
+}
+
+
+@media(max-width : 991px) {
+	
+	.intro{
+		&__tittle{
+			font-size: 80px;
+		}
+		&__suptittle{
+			font-size: 35px;
+		}
+	}
+
+	
+	.nav{
+		font-size: 12px;
+	}
+	.header{
+		&__logo{
+			font-size: 25px;
+		}
+	}
+}
+
+
+@media(max-width : 770px) {
+	.nav{
+		display: none;
+	}
+	.slider{
+		&__text{
+			display: none;
+		}
+	}
+	.intro{
+		&__tittle{
+			font-size: 40px;
+		}
+		&__suptittle{
+			font-size: 23px;
+		}
+	
+	}
+	
+	.header{
+		&__logo{
+			font-size: 20px;
+		}
+	}
+}
+@media(max-width : 575px) {
+	
+	.intro{
+		&__tittle{
+			font-size: 35px;
+		}
+		&__suptittle{
+			font-size: 23px;
+		}
+	
+	}
+	
+	.header{
+		&__logo{
+			font-size: 18px;
+		}
+	}
 }
