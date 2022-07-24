@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5 {
 			&:before{
 				content: "";
 				display: block;
-				width: 70px;
+				width: 50%;
 				height: 3px;
 				position: absolute;
 				top: -3px;
@@ -285,6 +285,7 @@ h1, h2, h3, h4, h5 {
 	}
 	&__item{
 		flex: 1 1 0;
+		display: block;
 		border-left: 1px solid #fff ;
 		text-align: center;
 		&:last-child{
@@ -318,6 +319,7 @@ h1, h2, h3, h4, h5 {
 .services{
 	display:flex;
 	padding: 50px 0 0 0;
+	flex-wrap: wrap;
 	&__item{
 		flex: 1 1 0;
 		position: relative;
@@ -388,11 +390,16 @@ h1, h2, h3, h4, h5 {
 .section--do{
 	padding: 112px 0 0 0;
 }
+
 .do{
 	padding: 92px 0 120px 0;
 	display: flex;
 	&__item{
 		width: 50%;
+	}
+	&__photo{
+		max-width: 100%;
+		height: auto;
 	}
 }
 .accordion{
@@ -479,6 +486,8 @@ h1, h2, h3, h4, h5 {
 		position: relative;
 	}
 	&__photo{
+		max-width: 100%;
+		height: auto;
 		&-no{
 			border-radius: 50%;
 			position: absolute;
@@ -562,8 +571,10 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	margin-top: 100px;
+	margin: 80px -7px 0;
 	&__item{
+		width: 33.333%;
+		padding: 0 15px;
 		&:hover .card__img img{
 			opacity: .1;
 		}
@@ -585,6 +596,8 @@ h1, h2, h3, h4, h5 {
 		& img{
 			transition: opacity .1s linear;
 			display: block;
+			max-width: 100%;
+			height: auto;
 		}
 	}
 	&__decr{
@@ -672,6 +685,8 @@ h1, h2, h3, h4, h5 {
 	}
 	&__icon{
 		& img{
+			max-width: 100%;
+			height: auto;
 			cursor: pointer;
 		}
 	}
@@ -1150,83 +1165,4 @@ h1, h2, h3, h4, h5 {
 
 
 
-@media(max-width : 1230px) {
-	
-	.intro{
-		&__tittle{
-			font-size: 120px;
-		}
-		&__suptittle{
-			font-size: 50px;
-		}
-	
-	}
-}
-
-
-@media(max-width : 991px) {
-	
-	.intro{
-		&__tittle{
-			font-size: 80px;
-		}
-		&__suptittle{
-			font-size: 35px;
-		}
-	}
-
-	
-	.nav{
-		font-size: 12px;
-	}
-	.header{
-		&__logo{
-			font-size: 25px;
-		}
-	}
-}
-
-
-@media(max-width : 770px) {
-	.nav{
-		display: none;
-	}
-	.slider{
-		&__text{
-			display: none;
-		}
-	}
-	.intro{
-		&__tittle{
-			font-size: 40px;
-		}
-		&__suptittle{
-			font-size: 23px;
-		}
-	
-	}
-	
-	.header{
-		&__logo{
-			font-size: 20px;
-		}
-	}
-}
-@media(max-width : 575px) {
-	
-	.intro{
-		&__tittle{
-			font-size: 35px;
-		}
-		&__suptittle{
-			font-size: 23px;
-		}
-	
-	}
-	
-	.header{
-		&__logo{
-			font-size: 18px;
-		}
-	}
-}
+@import"media";
