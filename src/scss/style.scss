@@ -320,11 +320,15 @@ h1, h2, h3, h4, h5 {
 	display:flex;
 	padding: 50px 0 0 0;
 	flex-wrap: wrap;
+	justify-content: center;
 	&__item{
-		flex: 1 1 0;
+		width: 24%;
 		position: relative;
-		padding-left: 68px;
-		padding-right: 25px;
+		padding: 0 25px 30px 68px ;
+		margin-bottom: 30px;
+		&-border{
+			border-bottom: 1px solid #e5e5e5;
+		}
 		&::before{
 			content: "";
 			width: 1200px;
@@ -375,6 +379,8 @@ h1, h2, h3, h4, h5 {
 	}
 	&__ipad{
 		display: block;
+		max-width: 100%;
+		height: auto;
 
 	}
 	&__iphone{
@@ -382,6 +388,8 @@ h1, h2, h3, h4, h5 {
 		bottom: -101px;
 		right: 0;
 		z-index: 1;
+		max-width: 100%;
+		height: auto;
 
 	}
 
@@ -1163,6 +1171,3 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
-
-
-@import"media";
