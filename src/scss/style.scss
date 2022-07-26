@@ -281,6 +281,7 @@ h1, h2, h3, h4, h5 {
 	background-color: #95e1d3;
 	&__stat{
 		display: flex;
+		flex-wrap: wrap;
 
 	}
 	&__item{
@@ -322,7 +323,7 @@ h1, h2, h3, h4, h5 {
 	flex-wrap: wrap;
 	justify-content: center;
 	&__item{
-		width: 24%;
+		width: 20%;
 		position: relative;
 		padding: 0 25px 30px 68px ;
 		margin-bottom: 30px;
@@ -1171,3 +1172,4 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
+@import "media";
