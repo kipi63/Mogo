@@ -13,6 +13,7 @@
 		font-size: 20px;
 		
 	}
+	
 }
 
 
@@ -83,6 +84,37 @@
 				width: 150px;
 			}
 		
+		}
+	}
+	.clients{
+		max-width: 600px;
+		align-items: center;
+		margin: 0 auto;
+		&__item{
+			width: 100%;
+			padding: 0 0 0 175px;
+			
+
+		}
+	}
+	.footer{
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__col{
+			width: 100%;
+			&-2{
+				margin-top: 20px;
+				width: 50%;
+				
+			}
+			&-3{
+				margin-top: 20px;
+				width: 50%;
+			}
+		}
+		&__title{
+			text-align: center;
 		}
 	}
 }
@@ -203,17 +235,75 @@
 		&__author{
 			font-size: 20px;
 		}
+		&__btn-next{
+			right: 20px;
+		}
+		&__btn-prew{
+			left: 15px;
+		}
 	}
+	.work{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		&__col{
+			width: 50%;
+			flex: none;
+		}
+		
+	}
+	.stories{
+		flex-wrap: wrap;
+		&__item{
+			width: 100%;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+	}
+	.footer{
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__col{
+			width: 100%;
+			&-2{
+				margin-top: 20px;
+				width: 100%;
+				
+			}
+			&-3{
+				margin-top: 20px;
+				width: 100%;
+			}
+		}
+		&__title{
+			text-align: center;
+		}
+	}
+	.rectangle{
+		padding: 0;
+		&__item{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		&__icon{
+			width: 30%;
+		}
+	}
+	
 }
 @media(max-width : 575px) {
 	
 	.intro{
 		&__tittle{
-			font-size: 35px;
+			font-size: 30px;
 			
 		}
 		&__suptittle{
-			font-size: 23px;
+			font-size: 20px;
 		}
 	
 	}
@@ -317,8 +407,48 @@
 			
 		}
 		&__icon{
-			margin: 0 10px 10px 0 ;
+			width: 40%;
+			margin: 0 5px 5px 0 ;
 			align-items: center;
+		}
+	}
+	.work{
+		&__col{
+			width: 100%;
+			display:flex;
+			flex-wrap: wrap;
+		}
+	}
+	.clients{
+		&__item{
+			padding: 0;
+		}
+		&__img{
+			position: static;
+			display: block;
+			margin: 0 auto;
+		}
+		&__name{
+			text-align: center;
+		}
+		&__prof{
+			text-align: center;
+			&::after{
+				margin: 10px auto;
+			}
+		}
+	}
+	.subscribe{
+		width: 100%;
+		&__input{
+			
+			max-width: 250px;
+			width: 100%;
+		}
+		&__btn{
+			margin-top: 10px;
+			max-width: 300px;
+			width: 100%;
 		}
 	}
 }

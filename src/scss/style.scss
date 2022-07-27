@@ -25,6 +25,9 @@ hr{
 h1, h2, h3, h4, h5 {
 	margin: 0;
 }
+.page{
+	overflow: hidden;
+}
 .container {
 	width: 100%;
 	
@@ -252,6 +255,7 @@ h1, h2, h3, h4, h5 {
 }
 .section {
 	padding: 90px 0 110px 0;
+	overflow: hidden;
 
 	&-clients{
 		background: url('../img/bg/happy.png') center (center / cover) no-repeat;
@@ -265,7 +269,6 @@ h1, h2, h3, h4, h5 {
 	}
 	&__text{
 		color: #999999;
-		font-family: Roboto;
 		font-size: 15px;
 		font-weight: 400;
 		font-style: normal;
@@ -765,7 +768,7 @@ h1, h2, h3, h4, h5 {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	&__item{
-		width: 30%;
+		width: 27%;
 		padding: 100px 45px 0 175px;
 		position: relative;
 		margin-bottom: 60px;
@@ -817,10 +820,13 @@ h1, h2, h3, h4, h5 {
 }
 .stories{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	&__item{
-		width: 31%;
+		width: 30%;
 		padding: 0 30px 100px 0;
+		&:last-child{
+			padding-right: 0;
+		}
 		
 
 	}
@@ -1134,6 +1140,8 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 	max-width: 380px;
 	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
 	&__input{
 		border: 1px solid #e7e7e7;
 		background-color: #ffffff;
