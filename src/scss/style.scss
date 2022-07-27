@@ -278,10 +278,11 @@ h1, h2, h3, h4, h5 {
 
 .statistics{
 	padding: 90px 0;
-	background-color: #95e1d3;
+	
 	&__stat{
 		display: flex;
 		flex-wrap: wrap;
+		background-color: #95e1d3;
 
 	}
 	&__item{
@@ -403,6 +404,7 @@ h1, h2, h3, h4, h5 {
 .do{
 	padding: 92px 0 120px 0;
 	display: flex;
+	flex-wrap: wrap;
 	&__item{
 		width: 50%;
 	}
@@ -487,6 +489,7 @@ h1, h2, h3, h4, h5 {
 		background-color: #ffffff;
 	}
 	&__grey{
+		
 		padding: 70px 110px 70px 110px;
 		position: relative;
 	}
@@ -583,6 +586,7 @@ h1, h2, h3, h4, h5 {
 	margin: 80px -7px 0;
 	&__item{
 		width: 33.333%;
+		max-width: 380px;
 		padding: 0 15px;
 		&:hover .card__img img{
 			opacity: .1;
